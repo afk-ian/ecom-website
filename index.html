@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipino Kakanin Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="img/logo.png" alt=""></div>
+        <ul class="nav-links">
+            <div class="nav-item">
+                <li><a href="#home">Home</a></li>
+                <div class="active-nav"></div>
+            </div>
+            <div class="nav-item">
+                <li><a href="#menu">Menu</a></li>
+            </div>
+            <div class="nav-item">
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </div>
+            <div class="nav-item">
+                <li><a href="#contact">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <h1>Experience the Best Traditional Kakanin</h1>
+        <p>Freshly made Filipino delicacies delivered to your doorstep.</p>
+        <a href="#menu" class="cta-button">Order Now</a>
+    </header>
+
+    <section id="menu" class="menu-section">
+        <h2 class="menu-text">Our Menu</h2>
+        <div class="product-container">
+            <div class="product-info-container">
+                <div class="product">
+                    <img src="img/puto.jpg" alt="Puto">
+                    <h3>Puto</h3>
+                    <p>Soft and fluffy rice cakes</p>
+                    <p class="price">₱15</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-info-container">
+                <div class="product">
+                    <img src="img/bibingka.jpg" alt="Bibingka">
+                    <h3>Bibingka</h3>
+                    <p>Classic Christmas rice cake</p>
+                    <p class="price">₱120</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-info-container">
+                <div class="product">
+                    <img src="img/lansonkalamay.jpg" alt="Bibingka">
+                    <h3>Lason Kalamay</h3>
+                    <p>Classic Christmas rice cake</p>
+                    <p class="price">₱80</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-info-container">
+                <div class="product">
+                    <img src="img/sinaging.jpg" alt="Bibingka">
+                    <h3>Sinaging</h3>
+                    <p>Classic Christmas rice cake</p>
+                    <p class="price">₱50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-info-container">
+                <div class="product">
+                    <img src="img/diplato.jpg" alt="Bibingka">
+                    <h3>Diplato</h3>
+                    <p>Classic Christmas rice cake</p>
+                    <p class="price">₱100</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart-section">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total Price: ₱<span id="item-price-total">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact" class="contact-section">
+        <h1>Contact Information</h1>
+        <h2>Email: sweetandsticky@gmail.com</h2>
+        <a href=""></a>
+        <h3>Contact Number: 09635938828</h3>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Filipino Sweet and Sticky Kakanin Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"
+        integrity="sha512-omCJ8S/xl+DUjxNTqvhVSptHwIEi0IDp52n63HEj8ThJgSK/8Lcpi9btnTdE8db+Y4cDKZrZ7NQZBX4PKN4i4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script src="gsap.js"></script>
+</body>
+
+</html>

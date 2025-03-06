@@ -1,0 +1,248 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #f8f8f8;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #6A1B9A, #D81B60);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    height: 60px; /* Adjust size as needed */
+    width: auto;
+    display: block;
+    margin-left: 50px;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:active,
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.active-nav {
+    width: 100%;
+    height: 3px;
+    background-color: #ffcc00;
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+/* Hero Section or Home  */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background: url('hero.jpg') center/cover no-repeat; Kini wala ni gamit */
+    color: white;
+}
+
+
+.hero-section h1 {
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-family: cursive;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: slideUp 1s ease-in-out;
+}
+
+.hero-section p {
+    animation: slideUp 1s ease-in-out;
+    font-family: cursive;
+}
+
+/* Para sa animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.cta-button {
+    margin-top: 20px;
+    background: #ff3b60;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    /* background: #e63250; */
+    animation: rainbow 5s infinite;
+}
+
+.menu-text {
+    font-size: 40px;
+    padding: 9px;
+    margin-bottom: 30px;
+}
+
+/* Product Section */
+.menu-section {
+    height: 98vh;
+    padding: 80px 20px;
+    text-align: center;
+    background: white;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 300px;
+}
+
+.product-info-container {
+    /* border: 2px solid green; */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform .3s;
+    padding: 4px;
+}
+
+.product-info-container:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product {
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    text-align: center;
+    gap: 19px;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.product .price {
+    font-weight: bold;
+    color: #6A1B9A;
+}
+
+.product button {
+    background: #ff3b60;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.product button:hover {
+    /* background: #ff00a6; */
+    animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background: red;
+    }
+    13% {
+        background: orange;
+    }
+    26% {
+        background: yellow;
+    }
+    39% {
+        background: green;
+    }
+    52% {
+        background: blue;
+    }
+    65% {
+        background: indigo;
+    }
+    78% {
+        background: violet;
+    }
+    100% {
+        background: red;
+    }
+}
+
+/* Cart Section */
+.cart-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f8f8f8;
+    /* display: none; */
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #6A1B9A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
